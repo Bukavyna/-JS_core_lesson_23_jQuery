@@ -8,6 +8,46 @@
 </head>
 <body>
 
+	<h2 id="countdown">01:00</h2>
+
+	<div class="box-buttons">
+		<button id="btn_start" class="btn">Start game</button>
+		<button id="btn_check" class="btn">Check result</button>
+		<button id="btn_new" class="btn">New game</button>
+	</div>
+
+	<div class="block-puzzles">
+		<div class="box" id="box-left">
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+			<div class="puzzle-piece"></div>
+		</div>
+		<div class="box" id="box-right"></div>
+	</div>
+
+	<div class="modal-container"></div>
+
+	<div class="info_slide-check">
+		<div class="info_slide-check_text">You still have time, you sure? <span class="info_slide-check_time">00:00</span></div>
+		<div class="info_slide-check_buttons-box">
+			<button id="info_slide-check_btn-close" class="btn">Close</button>
+			<button id="info_slide-check_btn-check" class="btn">Check</button>
+		</div>
+	</div>
+
 	<script src="Base/JS/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="Base/JS/script.js"></script>
