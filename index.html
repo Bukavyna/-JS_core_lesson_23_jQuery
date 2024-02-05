@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Title</title>
+	<title>Puzzle</title>
 	<link rel="stylesheet" href="Base/Style/style.css">
 </head>
 <body>
 
-	<h2 id="countdown">01:00</h2>
+	<h2 class="show-timer">01:00</h2>
 
 	<div class="box-buttons">
 		<button id="btn_start" class="btn">Start game</button>
@@ -18,30 +18,19 @@
 
 	<div class="block-puzzles">
 		<div class="box" id="box-left">
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
-			<div class="puzzle-piece"></div>
+
 		</div>
-		<div class="box" id="box-right"></div>
+
+		<div class="box" id="box-right">
+
+		</div>
 	</div>
 
 	<div class="modal-container"></div>
 
 	<div class="info_slide-check">
-		<div class="info_slide-check_text">You still have time, you sure? <span class="info_slide-check_time">00:00</span></div>
+		<div class="info_slide-check_text">You still have time, you sure? <span class="show-timer modal-timer">00:00</span></div>
+		<div class="text2">Its a pity, but you lost</div>
 		<div class="info_slide-check_buttons-box">
 			<button id="info_slide-check_btn-close" class="btn">Close</button>
 			<button id="info_slide-check_btn-check" class="btn">Check</button>
