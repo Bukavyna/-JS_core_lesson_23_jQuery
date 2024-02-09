@@ -8,32 +8,45 @@
 </head>
 <body>
 
+ <!-- Дисплей зворотнього відліку-->
 	<h2 class="show-timer">01:00</h2>
 
+	<!-- Кнопки для керування грою і інформації-->
 	<div class="box-buttons">
 		<button id="btn_start" class="btn">Start game</button>
 		<button id="btn_check" class="btn">Check result</button>
 		<button id="btn_new" class="btn">New game</button>
 	</div>
 
+	<!--	Блок і бокси з пазлами-->
 	<div class="block-puzzles">
-		<div class="box" id="box-left">
-
-		</div>
-
-		<div class="box" id="box-right">
-
-		</div>
+		<div class="box" id="box-left"></div>
+		<div class="box" id="box-right"></div>
 	</div>
 
+	<!--	Модальний контейнер-->
 	<div class="modal-container"></div>
 
-	<div class="info_slide-check">
-		<div class="info_slide-check_text">You still have time, you sure? <span class="show-timer modal-timer">00:00</span></div>
+	<!--	Модальне вікно-->
+	<div class="info_modal">
+		<div class="info_modal_text">You still have time, you sure? <span class="show-timer modal-timer">00:00</span></div>
 		<div class="text2">Its a pity, but you lost</div>
 		<div class="info_slide-check_buttons-box">
 			<button id="info_slide-check_btn-close" class="btn">Close</button>
 			<button id="info_slide-check_btn-check" class="btn">Check</button>
+		</div>
+	</div>
+
+	<!-- Кнопки для встановлення часу тривалості гри-->
+	<div class="radio-btn">
+		<div>
+			<input type="radio" name="time" class="radio" id="radio" value="60" checked><label for="radio"> 1 хвилина</label>
+		</div>
+		<div>
+			<input type="radio" name="time" class="radio" id="radio1" value="120"><label for="radio1"> 2 хвилини</label>
+		</div>
+		<div>
+			<input type="radio" name="time" class="radio" id="radio2" value="180"><label for="radio2"> 3 хвилини</label>
 		</div>
 	</div>
 
